@@ -6,15 +6,15 @@ const Inspiration = () => {
     const [quote, setQuote] = useState();
 
 useEffect(() => {
-    const inspirationURL = `https://zenquotes.io/api/random`;
-    const requestOptions = {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json' , "Access-Control-Allow-Origin": "*"},
-        crossDomain:true,
-        mode: 'cors',
-    };
+    const inspirationURL = `https://inspiration.goprogram.ai/`;
+    // const requestOptions = {
+    //     method: 'GET',
+    //     headers: { 'Content-Type': 'application/json' , "Access-Control-Allow-Origin": "*"},
+    //     crossDomain:true,
+    //     mode: 'cors',
+    // };
     const makeApiCall = () => {
-      fetch(inspirationURL, requestOptions)
+      fetch(inspirationURL)
         .then((res) => res.json())
         .then((data) => {
           console.log("QUOTES LMAO", data);
