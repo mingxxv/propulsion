@@ -17,9 +17,24 @@ useEffect(() => {
     makeApiCall();
 }, []);
 
+
+let things = tableData?.records.map((d, i) => {
+    return (
+      <li key={i}>
+          <a href={d?.fields.URL}>{d?.fields.Title}</a>
+      </li>
+    );
+  });
+
+
 console.log(tableData?.records[0].fields.Title)
 
-  return <div>eat me lmao</div>;
+  return <div className="component">
+      eat me lmao
+      <ul>
+{things}
+      </ul>
+      </div>;
 };
 
 export default AirTableList;

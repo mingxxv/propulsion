@@ -14,7 +14,7 @@ const Time = () => {
     });
 
     return (
-        <div>
+        <div className="component">
             {timeState.toLocaleTimeString()} 
         </div>
     )
