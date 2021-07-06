@@ -8,8 +8,8 @@ function Dashboard() {
   return (
     <div className="App">
       <Time />
-      <WeatherAPI />
       <AirTableList />
+      <WeatherAPI />
   
     </div>
   );

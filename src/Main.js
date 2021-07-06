@@ -7,17 +7,17 @@ function Main() {
   return (
     <div>
 
-<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+<nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
 
-  <div class="navbar-menu is-active">
-    < div class="navbar-end">
-      <div class="navbar-item">
+  <div className="navbar-menu is-active">
+    < div className="navbar-end">
+      <div className="navbar-item">
         <Link to="/">
             Dashboard
           </Link>
       </div>
 
-      <div class="navbar-item">
+      <div className="navbar-item">
       <Link className="navbar-item" to="/about">
             About
           </Link>
