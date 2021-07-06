@@ -29,9 +29,9 @@ const WeatherAPI = () => {
 
 
     return (
-        <>
-        <div className="component">The weather for the next 24 hours is expected to be {forecastName}, with a low of {forecastTempLow} and a high of {forecastTempHigh} degrees celsius.</div>
-        </>// AND BALLS
+        
+        <div className="column">The weather for the next 24 hours is expected to be {forecastName}, with a low of {forecastTempLow} and a high of {forecastTempHigh} degrees celsius.</div>
+        
     )
 };
 

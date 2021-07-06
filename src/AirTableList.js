@@ -29,8 +29,8 @@ let things = tableData?.records.map((d, i) => {
 
 console.log(tableData?.records[0].fields.Title)
 
-  return <div className="component">
-      <h4>Bookmarks</h4>
+  return <div className="column">
+      <h4>Bookmarks:</h4>
       <ul>
 {things}
       </ul>

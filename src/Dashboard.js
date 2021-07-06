@@ -7,10 +7,10 @@ import AirTableList from './AirTableList'
 function Dashboard() {
   return (
     <div className="App">
-      
+      <Time />
       <WeatherAPI />
       <AirTableList />
-      <Time />
+  
     </div>
   );
 }

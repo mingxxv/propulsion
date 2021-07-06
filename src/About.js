@@ -3,7 +3,7 @@ import * as React from "react"
 const About = () => {
 
     return (
-        <div className="component">
+        <div className="column">
             This is the about page.
         </div>
     )
