@@ -3,9 +3,11 @@ import * as React from 'react';
 import WeatherAPI from './Weather.js'
 import Time from './Time.js'
 import AirTableList from './AirTableList'
-function App() {
+
+function Dashboard() {
   return (
     <div className="App">
+      
       <WeatherAPI />
       <AirTableList />
       <Time />
@@ -13,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default Dashboard;

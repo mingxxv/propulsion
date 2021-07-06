@@ -30,7 +30,7 @@ let things = tableData?.records.map((d, i) => {
 console.log(tableData?.records[0].fields.Title)
 
   return <div className="component">
-      eat me lmao
+      <h4>Bookmarks</h4>
       <ul>
 {things}
       </ul>
