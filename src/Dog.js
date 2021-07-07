@@ -6,17 +6,17 @@ import DogChild from './DogChild';
 const Dog = () => {
 
     const [dog, setDog] = useState();
-    const [toggle, setToggle] = useState(true);
-    const url = 'https://random.dog/woof.json?include=jpg,jpeg,gif'
+    const [toggle, setToggle] = useState(true); // puts the original state as boolean, see line 27.
+    const url = 'https://random.dog/woof.json?include=jpg,jpeg,gif' // API allows you to include only specific filetypes, so nice right?!
 
     
     useEffect(() => {
         
-        const makeApiCall = () => { // ACTUALLY THIS MAKEAPICALL IS STUPID
+        const makeApiCall = () => { // sometimes I wonder why I still do this, is it necessary?
             fetch(url)
             .then((res) => res.json())
             .then((data) => {
-                console.log("This is a dog URL obj", data);
+                console.log("This is a dog URL obj", data); // yeah this calls back the API as an object that we can DRILL into woot
                 setDog(data);
             });
         };
@@ -24,19 +24,17 @@ const Dog = () => {
             }, [toggle]);
 
             const flipMeBaby = () => {
-                setToggle(!toggle)
+                setToggle(!toggle) // so flipMeBaby switches the toggle from true to false, allowing you to rerender on button press
             }
     
-
-    console.log(dog?.url)
-
     return (
         <>
         <DogChild doggo={dog?.url} />
-        <button onClick={flipMeBaby}>GIV ME DOGGO BABY</button>
+        <br></br>
+        <button className="button" onClick={flipMeBaby}>GIV ME DOGGO BABY</button>
         </>
     )
 
 }
 
-export default Dog
+export default Dog;

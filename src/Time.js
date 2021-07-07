@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { useState, useEffect } from 'react';
+import TimeChildClock from './TimeChildClock';
+import TimeChildGreeter from './TimeChildGreeter';
 
 
 const Time = () => {
@@ -14,8 +16,9 @@ const Time = () => {
     });
 
     return (
-        <div id="timelol" className="column">
-            {timeState.toLocaleTimeString()} 
+        <div>
+            <TimeChildClock clock={timeState} />
+            <TimeChildGreeter greetme={timeState}/>
         </div>
     )
 
