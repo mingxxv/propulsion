@@ -55,12 +55,15 @@ There is currently no way to remove a frequently used tab without going into the
 ## APIs Used
 
 * Data.gov.sg
+
 This API is the Singapore Government's own public database. I pulled the 24H weather from it.
 
-* AirTable
+* AirTable [Limited to 5 refreshes per second, pls don't abuse arigato~!]
+
 This API allows me to store information (like my frequently used websites) in the cloud. I used this for the frequently used website portion.
 
 * Random.dog
+
 This API pulls random pictures of truly adorable dogs from the far reaches of cyberspace. I used this for my random dog generator portion.
 
 ---
@@ -80,4 +83,4 @@ This API pulls random pictures of truly adorable dogs from the far reaches of cy
 
  ## References
 
- * Momentum Dash
+ * [Momentum Dash](https://momentumdash.com/)
