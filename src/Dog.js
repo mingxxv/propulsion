@@ -29,9 +29,9 @@ const Dog = () => {
     
     return (
         <>
-        <DogChild doggo={dog?.url} />
+        <button className="button" onClick={flipMeBaby}>GIVE ME SOME DOGGOS</button>
         <br></br>
-        <button className="button" onClick={flipMeBaby}>GIV ME DOGGO BABY</button>
+        <DogChild doggo={dog?.url} />
         </>
     )
 
