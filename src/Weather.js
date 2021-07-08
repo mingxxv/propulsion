@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useEffect, useState } from 'react';
+import WeatherChild from './WeatherChild.js';
 
 
 const WeatherAPI = () => {
@@ -10,7 +11,7 @@ const WeatherAPI = () => {
     
     useEffect(() => {
         
-        const makeApiCall = () => { // ACTUALLY THIS MAKEAPICALL IS STUPID
+        const makeApiCall = () => { // make the call, fam. Make it!!
             fetch(url)
             .then((res) => res.json())
             .then((data) => {
@@ -21,16 +22,14 @@ const WeatherAPI = () => {
         makeApiCall();
     }, []);
     
-    console.log(weatherData?.items[0].general.forecast) // PUT A ?. OR DIE A PAINFUL DEATH LAH CHEEBYE
+    console.log(weatherData?.items[0].general.forecast) // PUT A ?. OR DIE A PAINFUL DEATH lmao (this is basically a replacement for await)
 
-    const forecastName = weatherData?.items[0].general.forecast;
-    const forecastTempLow = weatherData?.items[0].general.temperature.low;
-    const forecastTempHigh = weatherData?.items[0].general.temperature.high;
+    
 
 
     return (
         
-        <div className="column">The weather for the next 24 hours is expected to be {forecastName}, with a low of {forecastTempLow} and a high of {forecastTempHigh} degrees celsius.</div>
+        <WeatherChild daWeatherrrr={weatherData} />
         
     )
 };
