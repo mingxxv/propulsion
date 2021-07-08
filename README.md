@@ -16,7 +16,7 @@ What technologies you used that helped you build this project.
 
 ### Wireframes
 
-TBD
+![You should see a Wireframe, please load!!](/src/PROJ2_Wireframe.png)
 
 ### User Stories
 
@@ -43,7 +43,9 @@ The next few days saw me coding and testing the project.
 ### Problem-Solving Strategy
 
 First, I googled. Google really helps. As well as YouTube/Stack Overflow.
+
 Second, if I couldn't find anything, I'll ask my classmates, or my TAs and lecturer.
+
 I never got a third option as my classmates, TAs, and lecturer were incredibly helpful :) (thanks Sam & Simon)
 
 ### Unsolved problems
