@@ -6,6 +6,9 @@ import AirTableList from './AirTableList'
 import Dog from './Dog'
 
 function Dashboard() {
+
+// this is just the main dashboard, which houses all the components. Nothing much to look here.
+
   return (
     <div className="App">
       <Time />

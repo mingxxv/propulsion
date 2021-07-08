@@ -1,7 +1,7 @@
 import * as React from "react"
 
 const About = () => {
-
+// this is just an about page nothing special
     return (
         <>
         <div className="column">

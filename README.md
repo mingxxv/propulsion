@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Propulsion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Propulsion is a 'New Tab' browser replacement for your web browser! It is a clone of the popular browser extension [Momentum](https://momentumdash.com/).
 
-## Available Scripts
+The purpose of this project is to recreate most of Momentum in React, with a few additions, such as a frequently used tablist, and a button which fetches random pictures of dogs.
 
-In the project directory, you can run:
+### Technologies Used
+What technologies you used that helped you build this project. 
 
-### `npm start`
+* Javascript
+* React
+* React Router
+* Bulma CSS Library
+* VSCode (for coding)
+* Google Chrome (for debugging and server running purposes)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Wireframes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+TBD
 
-### `npm test`
+### User Stories
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* There should be a clock displayed at the top of the page.
+* There should be a line of text greeting me based on the time of day.
+* There should be a list of frequently used websites, which will be displayed on the webpage.
+* I should be able to see the weather at the bottom of the page.
+* I should be able to see random pictures of dogs pulled from the Internet, on the click of a button.
+* I should be able to add new URLs through a form.
+* I should be able to read the rationale of this project through an About Page.
 
-### `npm run build`
+## Planning and Development Process
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I began planning this by looking at example projects built in React. I wanted a project that was simple enough for me to execute within a week, leaving additional leeway for bug-fixing and errors (which really did happen)! I eventually settled on a New Tab page, involving me pulling a motivational quote API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+However, after going through numerous motivational quote APIs, all failed due to opaque responses and my browser's CORS policy, which I discovered was unsolvable without a CORS proxy server. I then settled on a weather, dog, and AirTable API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+All this was documented on paper in really messy wireframes (see below for final draft).
 
-### `npm run eject`
+I needed a nice CSS library to spruce up my otherwise plain design. I chose Ant.design, but left it as it had incomplete documentation. I then chose Material UI, which was good, but overly complicated for my needs. I finally settled on Bulma, which was the perfect fit and really easy to style.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The next few days saw me coding and testing the project.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Problem-Solving Strategy
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+First, I googled. Google really helps. As well as YouTube/Stack Overflow.
+Second, if I couldn't find anything, I'll ask my classmates, or my TAs and lecturer.
+I never got a third option as my classmates, TAs, and lecturer were incredibly helpful :) (thanks Sam & Simon)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Unsolved problems
 
-## Learn More
+There is currently no way to remove a frequently used tab without going into the AirTable website. I intend to add this in a future iteration. I also want to implement a site-wide dark mode, which will probably require quite a lot of CSS refactoring.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## APIs Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Data.gov.sg
+This API is the Singapore Government's own public database. I pulled the 24H weather from it.
 
-### Code Splitting
+* AirTable
+This API allows me to store information (like my frequently used websites) in the cloud. I used this for the frequently used website portion.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Random.dog
+This API pulls random pictures of truly adorable dogs from the far reaches of cyberspace. I used this for my random dog generator portion.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments (in no particular order)
 
-### Making a Progressive Web App
+* Google
+* Stack Overflow
+* YouTube
+* God
+* my classmates from SEI-30
+* my TAs from SEI-30 (Jun Siang, Sam Tan)
+* my lecturer from SEI-30 (Simon Lau)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ ## References
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ * Momentum Dash

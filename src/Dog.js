@@ -12,7 +12,7 @@ const Dog = () => {
     
     useEffect(() => {
         
-        const makeApiCall = () => { // sometimes I wonder why I still do this, is it necessary?
+        const makeApiCall = () => { // fetches dogs, is this why we yell fetch at dogs?
             fetch(url)
             .then((res) => res.json())
             .then((data) => {
